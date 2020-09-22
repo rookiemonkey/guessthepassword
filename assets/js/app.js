@@ -3,6 +3,11 @@ $(document).ready(function () {
   let guessCount = 4;
   let password = '';
 
+  new Howl({
+    src: ['/assets/audio/techno.mp3'],
+    autoplay: true
+  }).play();
+
   $("#start").on("click", () => {
     toggleClasses($('#start-screen'), 'hide', 'show');
     toggleClasses($('#game-screen'), 'hide', 'show');
