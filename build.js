@@ -79,7 +79,10 @@ const assets = [
  *  * ]
  */
 
-const others = []
+const others = [
+    [`${path.join(__dirname, './assets/vendor')}`, `${outputDir_main}${outputDir_sub}/vendor`],
+    [`${path.join(__dirname, './assets/audio')}`, `${outputDir_main}${outputDir_sub}/audio`]
+]
 
 
 
